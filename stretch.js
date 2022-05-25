@@ -1,5 +1,5 @@
 /*
-STRETCH GOAL
+STRETCH GOAL w/o includes()
 
 Remove the intial question about whether the user wants to combine or deconstruct. Instead, prompt the user a single time for colors. If the user inputs a single color (i.e.: "purple"), deconstruct it. If the user inputs two colors separated by a space, (i.e.: "red blue"), combine them.
 */
