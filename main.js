@@ -45,8 +45,8 @@ let p = 'purple';
 let o = 'orange';
 let g = 'green';
 
-if (con_or_decon === 'con' || con_or_decon === 'decon'){
-    if (con_or_decon === 'con'){
+if (con_or_decon === c || con_or_decon === d){
+    if (con_or_decon === c){
         let con_color1 = prompt("What's your first color? Red, Blue or Yellow? ").toLowerCase();
         let con_color2 = prompt("What's your second color (different from first color)? Red, Blue or Yellow? ").toLowerCase();
         if ((con_color1 === r && con_color2 === b) || (con_color1 === b && con_color2 === r)){
@@ -62,7 +62,7 @@ if (con_or_decon === 'con' || con_or_decon === 'decon'){
         }
     }
 
-    if (con_or_decon === 'decon'){
+    if (con_or_decon === d){
         let decon_color = prompt("What color would you like to deconstruct? Purple, Orange or Green? ").toLowerCase();
         if (decon_color === p){
             console.log("The 2 colors that make " + p + " are " + r + " and " + b + ".");
