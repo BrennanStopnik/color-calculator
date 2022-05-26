@@ -48,7 +48,7 @@ let g = 'green';
 if (con_or_decon === c || con_or_decon === d){
     if (con_or_decon === c){
         let con_color1 = prompt("What's your first color? Red, Blue or Yellow? ").toLowerCase();
-        let con_color2 = prompt("What's your second color (different from first color)? Red, Blue or Yellow? ").toLowerCase();
+        let con_color2 = prompt("What's your second color? Red, Blue or Yellow? ").toLowerCase();
         if ((con_color1 === r && con_color2 === b) || (con_color1 === b && con_color2 === r)){
             console.log("The construct of " + r + " and " + b + " is " + p + ".");
         }else if ((con_color1 === r && con_color2 === y) || (con_color1 === y && con_color2 === r)){
