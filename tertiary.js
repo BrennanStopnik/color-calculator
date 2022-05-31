@@ -43,19 +43,19 @@ if (c_or_d.includes('red') || c_or_d.includes('yellow') || c_or_d.includes('blue
         console.log("The primary color " + b + " and the secondary color " + v + " make the tertiary color " + bv + ".");
     } else if (c_or_d.includes('red') && c_or_d.includes('violet')){
         console.log("The primary color " + r + " and the secondary color " + v + " make the tertiary color " + rv + ".");
-    } else if (c_or_d.includes('red')){
+    } else if (c_or_d === r){
         console.log(r + " stands alone. It's a primary color.")
-    } else if (c_or_d.includes('blue')){
+    } else if (c_or_d === b){
         console.log(b + " stands alone. It's a primary color.")
-    } else if (c_or_d.includes('yellow')){
+    } else if (c_or_d === y){
         console.log(y + " stands alone. It's a primary color.")
-    } else if (c_or_d.includes('violet')){
+    } else if (c_or_d === v){
         console.log("The secondary color " + v + " is made from primary colors " + r + " and " + b + ".");
-    } else if (c_or_d.includes('orange')){
+    } else if (c_or_d === o){
         console.log("The secondary color " + o + " is made from primary colors " + r + " and " + y + ".");
-    } else if (c_or_d.includes('green')){
+    } else if (c_or_d === g){
         console.log("The secondary color " + g + " is made from primary colors " + y + " and " + b + ".");
-    } else if (c_or_d.includes('black')){
+    } else if (c_or_d == bl){
         console.log("The secondary color " + bl + " is made from all the primary colors: " + b + ", " + y + " and " + r + ".");
     } else if (c_or_d === bg){
         console.log("The tertiary color " + bg + " is made from primary color " + b + " and secondary color " + g + ".");
@@ -69,19 +69,19 @@ if (c_or_d.includes('red') || c_or_d.includes('yellow') || c_or_d.includes('blue
         console.log("The tertiary color " + bv + " is made from primary color " + b + " and secondary color " + v + ".")
     } else if (c_or_d === rv){
         console.log("The tertiary color " + rv + " is made from primary color " + r + " and secondary color " + v + ".")
-    } else if (c_or_d === r && (c_or_d === bg|| c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
+    } else if (c_or_d === r && (c_or_d === bg || c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
         console.log("This calculator doesn't mix primary or secondry colors with tertiary colors. Try the primary and secondary colors like " + r + ", " + b + ", " + y + ", " + v + ", " + o + " or " + g + ".");
-    } else if (c_or_d === b && (c_or_d === bg|| c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
+    } else if (c_or_d === b && (c_or_d === bg || c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
         console.log("This calculator doesn't mix primary or secondry colors with tertiary colors. Try the primary and secondary colors like " + r + ", " + b + ", " + y + ", " + v + ", " + o + " or " + g + ".");
-    } else if (c_or_d.includes('yellow') && (c_or_d === bg|| c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
+    } else if (c_or_d === y && (c_or_d === bg || c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
         console.log("This calculator doesn't mix primary or secondry colors with tertiary colors. Try the primary and secondary colors like " + r + ", " + b + ", " + y + ", " + v + ", " + o + " or " + g + ".");
-    } else if (c_or_d.includes('green') && (c_or_d === bg|| c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
+    } else if (c_or_d === g && (c_or_d === bg || c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
         console.log("This calculator doesn't mix primary or secondry colors with tertiary colors. Try the primary and secondary colors like " + r + ", " + b + ", " + y + ", " + v + ", " + o + " or " + g + ".");
-    } else if (c_or_d.includes('orange') && (c_or_d === bg|| c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
+    } else if (c_or_d === o && (c_or_d === bg || c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
         console.log("This calculator doesn't mix primary or secondry colors with tertiary colors. Try the primary and secondary colors like " + r + ", " + b + ", " + y + ", " + v + ", " + o + " or " + g + ".");
-    } else if (c_or_d.includes('violet') && (c_or_d === bg|| c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
+    } else if (c_or_d === v && (c_or_d === bg || c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv)){
         console.log("This calculator doesn't mix primary or secondry colors with tertiary colors. Try the primary and secondary colors like " + r + ", " + b + ", " + y + ", " + v + ", " + o + " or " + g + ".");
-    } else if (c_or_d.includes('black') && (c_or_d === bg|| c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv || c_or_d.includes('red') || c_or_d.includes('yellow') || c_or_d.includes('blue')  || c_or_d.includes('violet') || c_or_d.includes('orange') || c_or_d.includes('green') || c_or_d.includes('black'))){
+    } else if (c_or_d === b && (c_or_d === bg || c_or_d === yg || c_or_d === yo || c_or_d === ro || c_or_d === bv || c_or_d === rv || c_or_d === r || c_or_d === y|| c_or_d === b  || c_or_d === v || c_or_d === o || c_or_d === g || c_or_d === bl)){
         console.log("For this calculator, anything with " + bl + " is still " + bl + ". Try the primary and secondary colors like " + r + ", " + b + ", " + y + ", " + v + ", " + o + " or " + g + ".");
     } else{
         console.log("Something went wrong. Try again")
